@@ -1,0 +1,27 @@
+Notebook[{Cell[
+BoxData[RowBox[{RowBox[{"f","[","z_","]"}],":=",RowBox[{"z","/",RowBox[
+{"(",RowBox[{RowBox[{"E","^","z"}],"-","1"}],")"}]}]}]],"Input",CellLabel -> "In[37]:= ",
+ExpressionUUID -> "480fa722-8672-48f4-8b85-61ef81019b62"],Cell[
+BoxData[RowBox[{RowBox[
+{"c","[",RowBox[{"k_",","," ","j_"}],"]"}],":=",RowBox[{RowBox[{"D","[",RowBox[{RowBox[
+{"f","[","z","]"}],","," ",RowBox[{"{",RowBox[{"z",","," ","j"}],"}"}]}],"]"}],"/."," ",RowBox[
+{"z"," ","->"," ","k"}]}]}]],"Input",CellLabel -> "In[38]:= ",ExpressionUUID -> "ee073144-1c9b-4b09-8787-e5487daf72e9"],Cell[
+BoxData[
+RowBox[{RowBox[{"b","[",RowBox[{"z_",","," ","n_",","," ","k_"}],"]"}],":=",RowBox[
+{"Sum","[",RowBox[{RowBox[{RowBox[{"c","[",RowBox[{"k",","," ","j"}],"]"}],"*",RowBox[
+{RowBox[{RowBox[{"(",RowBox[{"z","-","k"}],")"}],"^",RowBox[{"(",RowBox[{"j","-","n"}],")"}]}],"/",RowBox[
+{"Gamma","[",RowBox[{"j","-","n","+","1"}],"]"}]}]}],","," ",RowBox[{"{",RowBox[{"j",","," ","0",","," ","PRECISION"}],"}"}]}],"]"}]}]],
+"Input",ExpressionUUID -> "b1c74088-3e03-4b95-8436-2e7206adcb72"],Cell[
+BoxData[RowBox[
+{"k","=",RowBox[{"POSITION","-","PARAMETER"}]}]],"Input",ExpressionUUID -> "fad45e56-d603-4b8c-8297-3add5f8f0230"],Cell[
+BoxData[
+RowBox[{"Table","[",RowBox[{RowBox[{"N","[",RowBox[{"b","[",RowBox[{"0",","," ","i",","," ","k"}],"]"}],"]"}],","," ",RowBox[
+{"{",RowBox[{"i",",",RowBox[{"TABLE","-","MIN"}],","," ",RowBox[{"TABLE","-","MAX"}],",",RowBox[
+{"TABLE","-","STEP"}]}],"}"}]}],"]"}]],"Input",ExpressionUUID -> "f7aeb738-38e7-4937-80ca-dd4d556dba6b"],Cell[
+BoxData[
+RowBox[{"Plot","[",RowBox[{RowBox[{"{",RowBox[{"b","[",RowBox[{"0",","," ","x",","," ","k"}],"]"}],"}"}],","," ",RowBox[
+{"{",RowBox[{"x",","," ",RowBox[{"PLOT","-","MIN"}],","," ",RowBox[{"PLOT","-","MAX"}]}],"}"}]}],"]"}]],
+"Input",ExpressionUUID -> "68f7597c-664f-4fa6-9cac-05f4b7a4f22d"],Cell[
+BoxData[""],
+"Input",CellLabel -> "In[43]:= ",ExpressionUUID -> "2876de14-00c2-47b2-8928-305b9c89e440"]},
+StyleDefinitions -> "Default.nb",FrontEndVersion -> "14.3 for Wolfram Cloud 1.73 (July 23, 2025)"]
