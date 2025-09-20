@@ -56,7 +56,7 @@ $$B_n=lim_{a \to 0} \left. {\frac{1}{2T}\sum \limits_{j=-\infty}^\infty {(ij)^n 
 
 We can assume the the integral interval excludes $t=0$, since the measure of a countable - let alone finite - set is zero.
 
-[IV] was the method used by another Mathematica program of mine, titled BernoulliFourier.nb, but I accidentally broke the code of that one, and due to its poor results I never bothered to rebuild the program. The derivatives finite-precision Fourier series are very poor at approximating the derivatives of the original function; this is known as the Gibbs phenomenon. Thus, Fourier series is not the approach for computation of Bernoulli numbers; for pure mathematics, where we can have sums without an upper bound, it may be more useful.
+This was the method used by another Mathematica program of mine, titled BernoulliFourier.nb, but I accidentally broke the code of that one, and due to its poor results I never bothered to rebuild the program. The derivatives finite-precision Fourier series are very poor at approximating the derivatives of the original function; this is known as the Gibbs phenomenon. Thus, Fourier series is not the approach for computation of Bernoulli numbers; for pure mathematics, where we can have sums without an upper bound, it may be more useful.
 
 $$\textbf{Closing Remarks}$$
 
