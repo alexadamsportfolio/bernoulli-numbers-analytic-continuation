@@ -54,7 +54,7 @@ Since everything is constant with respect to $z$ except the exponential term, we
 
 $$B_n=lim_{a \to 0} \left. {\frac{1}{2T}\sum \limits_{j=-\infty}^\infty {(ij)^n e^{ijz} \int_{-T}^{T} {\frac{te^{-ijt}}{e^t-1}dt}}} \right|_{z=a}  [\mathrm{IV}]$$
 
-We can assume the the integral interval excludes $t=0$, since the measure of a countable - let alone finite - set is zero.
+We can assume that the integral interval excludes $t=0$, since the measure of a countable - let alone finite - set is zero.
 
 This was the method used by another Mathematica program of mine, titled BernoulliFourier.nb, but I accidentally broke the code of that one, and due to its poor results I never bothered to rebuild the program. The derivatives of finite-precision Fourier series are actually very poor at approximating the derivatives of the original function; this is known as the Gibbs phenomenon. Thus, Fourier series is not the approach for computation of Bernoulli numbers; for pure mathematics, where we can have sums without an upper bound, it may be more useful.
 
