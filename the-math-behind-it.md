@@ -66,4 +66,8 @@ Performing a moving average on the series could smooth out the perturbations ind
 
 $$\textbf{Closing Remarks}$$
 
-Lorem ipsum.
+Therefore, by applying fractional derivative operators to series expansions for the generating function of the Bernoulli numbers, we may be able to obtain Bernoulli numbers $B_n$ of non-integer index $n$, which would be useful for identifying the zeroes of the Riemann zeta function, since $B_n=-n\zeta(1-n)$. Nevertheless, there are potential issues with these purported methods in addition to computational limitations, as infinite series are unfortunately eager to diverge, and polynomials with non-integer degree terms tend to ramify in the complex plane.
+
+More generally than the extension of the Bernoulli numbers to non-integer indices, or the extension of derivatives to non-integer orders, whenever I come across a discrete structure in mathematics one of the first things that comes to my mind is, "How can I generalize this to become continuous, if not to all complex numbers?" For the integers are but particular cases of the complex numbers, so by understanding the complex numbers we can a fortiori understand the integers - this is the essence of analytic number theory. Generalization - this is the essence of mathematics. Henri Poincaré said it best:
+
+$$\textbf{“Mathematics is the art of giving the same name to different things.”}$$
