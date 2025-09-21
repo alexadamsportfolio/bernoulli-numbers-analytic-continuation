@@ -30,9 +30,11 @@ $$\frac{d^n x^j}{dx^n} = \frac{\Gamma (j + 1) x^{j-n}}{\Gamma (j-n+1)}  [\mathrm
 
 Applying this extended power rule to the formula from [I], and remembering the formula for the Bernoulli numbers given in [Introduction, II] we realize that
 
-$$B_n=lim_{a \to 0} \left. \sum\limits_{j=0}^\infty {f^{(j)}(k) \frac{\Gamma (j+1)(z-k)^{j-n}}{j! \Gamma(j-n+1)}} \right|_{z=a}  [\mathrm{IV}]$$
+$$B_n=lim_{z \to 0} \left. \sum\limits_{j=0}^\infty {f^{(j)}(k) \frac{\Gamma (j+1)(z-k)^{j-n}}{j! \Gamma(j-n+1)}} \right  [\mathrm{IV}]$$
 
 This is the value computed by BernoulliContinued.nb, albeit to a finite precision.
+
+![4d9e2cb2-b581-4343-82a9-9b1e98e3220c 1280x1280](https://github.com/user-attachments/assets/7f340134-dd31-4fba-89c1-24e6df14e2df)
 
 $$\textbf{Approach 2: Fourier Series}$$
 
@@ -52,11 +54,15 @@ $$\frac{z}{e^z-1}=\frac{1}{2T}\sum \limits_{j=-\infty}^\infty {e^{ijz} \int_{-T}
 
 Since everything is constant with respect to $z$ except the exponential term, we can easily use [I] to take the fractional derivative, and yield the Bernoulli numbers by [Introduction, II]
 
-$$B_n=lim_{a \to 0} \left. {\frac{1}{2T}\sum \limits_{j=-\infty}^\infty {(ij)^n e^{ijz} \int_{-T}^{T} {\frac{te^{-ijt}}{e^t-1}dt}}} \right|_{z=a}  [\mathrm{IV}]$$
+$$B_n=lim_{z \to 0} \left. {\frac{1}{2T}\sum \limits_{j=-\infty}^\infty {(ij)^n e^{ijz} \int_{-T}^{T} {\frac{te^{-ijt}}{e^t-1}dt}}} \right  [\mathrm{IV}]$$
 
-We can assume that the integral interval excludes $t=0$, since the measure of a countable - let alone finite - set is zero.
+We can allow the integral interval to exclude $t=0$, since the measure of a countable - let alone finite - set is zero.
 
-This was the method used by another Mathematica program of mine, titled BernoulliFourier.nb, but I accidentally broke the code of that one, and due to its poor results I never bothered to rebuild the program. The derivatives of finite-precision Fourier series are actually very poor at approximating the derivatives of the original function; this is known as the Gibbs phenomenon. Thus, Fourier series is not the approach for computation of Bernoulli numbers; for pure mathematics, where we can have sums without an upper bound, it may be more useful.
+This was the method used by another Mathematica program of mine, titled BernoulliFourier.nb, but I accidentally broke the code of that one, and due to its poor results I never bothered to rebuild the program. The derivatives of finite-precision Fourier series are actually very poor at approximating the derivatives of the original function; this is known as the Gibbs phenomenon, as can be seen in the low-amplitude high-frequency perturbations of the Fourier series of a square wave:
+
+<img width="1280" height="640" alt="Gibbs_phenomenon_50 svg" src="https://github.com/user-attachments/assets/12b3bcbb-b47f-4936-9f7c-5571facb6ada" />
+
+Performing a moving average on the series could smooth out the perturbations induced by the Gibbs phenomenon, but this would be too computationally expensive for my resources. Thus, Fourier series is not an ideal approach for the computation of Bernoulli numbers; for pure mathematics, where we can have sums without an upper bound, it may be more useful.
 
 $$\textbf{Closing Remarks}$$
 
