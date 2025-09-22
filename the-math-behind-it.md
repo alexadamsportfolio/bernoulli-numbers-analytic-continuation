@@ -30,7 +30,7 @@ $$\frac{d^n x^j}{dx^n} = \frac{\Gamma (j + 1) x^{j-n}}{\Gamma (j-n+1)}  [\mathrm
 
 Applying this extended power rule to the formula from [I], and remembering the formula for the Bernoulli numbers given in [Introduction, II] we realize that
 
-$$B_n=lim_{z \to 0} \left. \sum\limits_{j=0}^\infty {f^{(j)}(k) \frac{\Gamma (j+1)(z-k)^{j-n}}{j! \Gamma(j-n+1)}} \right  [\mathrm{IV}]$$
+$$B_n=lim_{z \to 0} \left. \sum\limits_{j=0}^\infty {f^{(j)}(k) \frac{\Gamma (j+1)(z-k)^{j-n}}{j! \Gamma(j-n+1)}} \right.   [\mathrm{IV}]$$
 
 This is the value computed by BernoulliContinued.nb, albeit to a finite precision.
 
@@ -54,7 +54,7 @@ $$\frac{z}{e^z-1}=\frac{1}{2T}\sum \limits_{j=-\infty}^\infty {e^{ijz} \int_{-T}
 
 Since everything is constant with respect to $z$ except the exponential term, we can easily use [I] to take the fractional derivative, and yield the Bernoulli numbers by [Introduction, II]
 
-$$B_n=lim_{z \to 0} \left. {\frac{1}{2T}\sum \limits_{j=-\infty}^\infty {(ij)^n e^{ijz} \int_{-T}^{T} {\frac{te^{-ijt}}{e^t-1}dt}}} \right  [\mathrm{IV}]$$
+$$B_n=lim_{z \to 0} \left. {\frac{1}{2T}\sum \limits_{j=-\infty}^\infty {(ij)^n e^{ijz} \int_{-T}^{T} {\frac{te^{-ijt}}{e^t-1}dt}}} \right.   [\mathrm{IV}]$$
 
 We can allow the integral interval to exclude $t=0$, since the measure of a countable - let alone finite - set is zero.
 
