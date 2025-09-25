@@ -1,4 +1,4 @@
-$$\textbf{Introduction}$$
+## Introduction
 
 The Bernoulli numbers, traditionally denoted as $B_n$, are a sequence of numbers that pop up frequently in analytic number theory, most notably in their relation to the Riemann zeta function, $B_n=-n\zeta(1-n)$.
 Seeing as zeroes of the Bernoulli numbers would thus correspond with zeroes of the Riemann zeta function, it would be useful to find an expression for $B_n$ for non-integer values of $n$, for the purpose of studying the Riemann Hypothesis.
@@ -12,7 +12,7 @@ $$B_n=lim_{a \to 0} \left. {\frac{d^n}{dz^n} \frac{z}{e^z-1}} \right|_{z=a}  [\m
 
 Evidently, we will need to generalize the derivative operator to non-integer values - that is, discover fractional calculus. There are a variety of ways we can proceed from here.
 
-$$\textbf{Approach 1: Taylor Series}$$
+## Approach 1: Taylor Series
 
 We can use a Taylor series with center $k \neq 0$ to represent the Bernoulli numbers' generating function $\frac{z}{e^z-1}$ like so
 
@@ -36,7 +36,7 @@ This is the value computed by BernoulliContinued.nb, albeit to a finite precisio
 
 ![4d9e2cb2-b581-4343-82a9-9b1e98e3220c 1280x1280](https://github.com/user-attachments/assets/7f340134-dd31-4fba-89c1-24e6df14e2df)
 
-$$\textbf{Approach 2: Fourier Series}$$
+## Approach 2: Fourier Series
 
 Though the Taylor series approach has proven to be computationally viable, I am a bit skeptical of its integrity due to possible variance under choice of center $k$, and the poles of the gamma function. It would be convenient to formulate the generating function of the Bernoulli numbers in terms of not only polynomials, but in terms of exponentials, as the extended power rule for exponential functions does not require the use of a non-holomorphic function such as the gamma function:
 
@@ -64,7 +64,7 @@ This was the method used by another Mathematica program of mine, titled Bernoull
 
 Performing a moving average on the series could smooth out the perturbations induced by the Gibbs phenomenon, but this would be too computationally expensive for my resources. Thus, Fourier series is not an ideal approach for the computation of Bernoulli numbers; for pure mathematics, where we can have sums without an upper bound, it may be more useful.
 
-$$\textbf{Closing Remarks}$$
+## Closing Remarks
 
 Therefore, by applying fractional derivative operators to series expansions for the generating function of the Bernoulli numbers, we may be able to obtain Bernoulli numbers $B_n$ of non-integer index $n$, which would be useful for identifying the zeroes of the Riemann zeta function, since $B_n=-n\zeta(1-n)$. Nevertheless, there are potential issues with these purported methods in addition to computational limitations, as infinite series are unfortunately eager to diverge, and polynomials with non-integer degree terms tend to ramify in the complex plane.
 
