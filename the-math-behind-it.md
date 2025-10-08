@@ -1,7 +1,7 @@
 ## Introduction
 
 The Bernoulli numbers, traditionally denoted as $B_n$, are a sequence of numbers that pop up frequently in analytic number theory, most notably in their relation to the Riemann zeta function, $B_n=-n\zeta(1-n)$.
-Seeing as zeroes of the Bernoulli numbers would thus correspond with zeroes of the Riemann zeta function, it would be useful to find an expression for $B_n$ for non-integer values of $n$, for the purpose of studying the Riemann Hypothesis.
+Seeing as zeroes of the Bernoulli numbers would thus correspond with zeroes of the Riemann zeta function, I devoted my junior year of high school to finding an expression for $B_n$ for non-integer values of $n$, for the purpose of studying the Riemann Hypothesis.
 We take note of the generating function for the Bernoulli numbers
 
 $$\frac{z}{e^z-1}=\sum \limits_{j=0}^\infty {\frac{B_j z^j}{j!}} \\quad [\mathrm{I}]$$
