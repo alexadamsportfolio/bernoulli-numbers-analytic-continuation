@@ -1,4 +1,4 @@
-Though the-math-behind-it.md delineates the mathematics most necessary to the behavior of this project, it would be a shame for a STEM portfolio not to have some mention of my less successful findings - after all, the end is the smallest, and arguably the most trivial, stage in mathematics. 
+Though the-math-behind-it.md delineates the mathematics most necessary to the behavior of this project, it would be a shame for a STEM portfolio not to have some mention of my less successful findings - in failing to make a light bulb ten thousand times, one discovers ten thousand ways how to not make a light bulb.
 This is a gallery of the surviving minority of my incomplete, if not incorrect, attempts on the bernoulli-numbers-analytic-continuation project; but they are no less interesting.
 
 Recalling [Part 1, IV] in the-math-behind-it.md we arrive at the following Taylor series expansion for the Bernoulli numbers of non-integer index:
