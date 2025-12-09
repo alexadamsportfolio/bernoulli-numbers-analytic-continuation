@@ -71,3 +71,7 @@ Therefore, by applying fractional derivative operators to series expansions for 
 More generally than the extension of the Bernoulli numbers to non-integer indices, or the extension of derivatives to non-integer orders, whenever I come across a discrete structure in mathematics one of the first things that comes to my mind is, "How can I generalize this to become continuous, if not to all complex numbers?" For the integers are but particular cases of the complex numbers, so by understanding the complex numbers we can a fortiori understand the integers - this is the essence of analytic number theory. Generalization - this is the essence of mathematics. Henri Poincaré said it best:
 
 $$\textbf{“Mathematics is the art of giving the same name to different things.”}$$
+
+## References
+
+PLACEHOLDER TEXT
